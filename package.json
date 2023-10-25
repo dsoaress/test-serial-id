@@ -1,0 +1,20 @@
+{
+  "name": "test-serial-id",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "scripts": {
+    "start": "ts-node -r tsconfig-paths/register src/main.ts",
+    "prepare": "docker-compose up -d && sleep 2 && prisma db push && prisma generate"
+  },
+  "dependencies": {
+    "@prisma/client": "5.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "20.8.7",
+    "prisma": "5.4.2",
+    "ts-node": "10.9.1",
+    "tsconfig-paths": "4.2.0",
+    "typescript": "5.2.2"
+  }
+}
